@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+ 
+<html>
+ <head>
+ <title> Escola Virtual </title>
+ <script src="script.js"></script>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+ </head>
+
+ <body>
+  <h1>Escola Virtual</h1> 
+  <h2> Formulário de Pré-Matricula</h2><br />
+
+<form action="Script_do_Formulario.php" method="post">
+
+<!-- DADOS PESSOAIS-->
+<fieldset>
+ <legend>Dados Pessoais</legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="nome">Nome do aluno: </label>
+   </td>
+   <td aling="left">
+    <input type="text" name="email" required>
+   </td>
+  <tr>
+   <td>
+    <label>Nascimento(ddd/mm/aaaa): </label>
+   </td>
+   <td aling="left">
+    <input type="date">
+   </td>
+  </tr>
+  <td>
+    <label for="nome da mãe">Nome da mãe: </label>
+   </td>
+   <td aling="left">
+    <input type="text" name="nome da mãe" required>
+   </td>
+  </tr>
+  <td>
+    <label for="nome do pai">Nome do pai: </label>
+   </td>
+   <td aling="left">
+    <input type="text" name="nome do pai" required>
+   </td>
+  </tr>
+  <tr>
+    <td>
+     <label for="telefone">Telefone:</label>
+    </td>
+    <td aling="left">
+        <label for='DDD'>DDD</label>
+        <input type="text" id="dddId" required> 
+
+        <label for='tel'>Telefone</label>
+        <input type="text" id="telId" required> 
+
+        <label for='ramal'>Ramal</label>
+        <input type="text" id="ramalId" required> 
+
+    </td>
+   </tr>
+  <tr>
+   <td>
+    <label for="E-Mail">E-Mail: </label>
+   </td>
+   <td aling="left">
+    <input type="text" id="E-MailID" required> 
+   </td>
+  </tr>
+ </table>
+</fieldset>
+<br />
+<!-- INFORMAÇÕES DE MATRÍCULLA -->
+<fieldset>
+    <legend>Informações de Matrícula</legend>
+    <table cellspacing="10">
+     <tr>
+      <td>
+       <label for="imagem">Série:</label>
+      </td>
+       <td aling="left">
+        <select name="série" required> 
+        <option value="pre">Pré-escola</option> 
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <label for="turno">Turno: </label>
+      </td>
+      <td aling="left">
+        <form>
+            <input type="radio" required>
+            <label for="turno">Manhã</label><br>
+            <input type="radio" required>
+            <label for="turno">Tarde</label><br>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <label for="atv">Atividades Extracurriculares: </label>
+      </td>
+      <td aling="left">
+        <form>
+            <input type="checkbox">
+            <label for="atv"> Informatica</label><br>
+            <input type="checkbox">
+            <label for="atv"> Música</label><br>
+            <input type="checkbox">
+            <label for="atv"> Balet</label><br>
+            <input type="checkbox">
+            <label for="atv"> Pintura</label><br>
+            <input type="checkbox">
+            <label for="atv"> Judô</label><br>
+            <input type="checkbox">
+            <label for="atv"> Futebol</label><br>
+      </td>
+     </tr>
+    </table>
+   </fieldset>
+   <br />
+   <input type="submit" value="Enviar">
+   <input type="reset" value="Limpar">
+   </form>
+   
+    </body>
+   </html>
